@@ -6,8 +6,15 @@
   padding: 0;
 }
 
+.container {
+  /* border: 3px dashed red;  */
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+}
+
 .square {
   border: 1px solid black;
-  height: 17px;
-  width: 17px;
+  flex: 0 0 calc(100%/16);
+  aspect-ratio: 1 / 1;
 }
