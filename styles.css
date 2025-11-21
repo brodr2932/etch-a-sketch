@@ -13,9 +13,19 @@ body {
   align-items: center;
 }
 
+button {
+  font-size: 12px;
+  padding: 2px 5px;
+}
+
+.buttons {
+  /* border: 1px solid red; */
+  margin-bottom: 30px;
+}
+
 h1 {
-  font-size: 50px;
-  margin: 45px 0;
+  font-size: 45px;
+  margin: 45px 0 5px 0;
   text-align: center;
 }
 
