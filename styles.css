@@ -15,7 +15,7 @@ body {
 
 h1 {
   font-size: 50px;
-  margin: 65px 0 70px 0;
+  margin: 45px 0;
   text-align: center;
 }
 
@@ -25,7 +25,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 550px;
+  width: 700px;
 }
 
 .square {
@@ -34,6 +34,5 @@ h1 {
   aspect-ratio: 1 / 1;
 }
 
-/* TODO: Center grid on page. */
 /* TODO: Apply hover effect to grid squares. */
 
