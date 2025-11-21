@@ -1,11 +1,7 @@
 const container = document.querySelector(".container");
-
-// Creates 256 squares for initial grid size
-for (let i = 0; i < 256; i++) {
-  container.innerHTML += '<div class="square"></div>';
-}
-
 const squares = document.querySelectorAll(".square");
+
+changeGridSize(16);
 
 squares.forEach(square => {
   square.addEventListener('mouseover', () => square.style.backgroundColor = "black");
@@ -20,5 +16,9 @@ gridSizeBtn.addEventListener('click', () => {
 });
 
 function changeGridSize(numSquaresPerSide) {
-  
+  const numSquaresTotal = numSquaresPerSide * numSquaresPerSide;
+
+  for (let i = 0; i < numSquaresTotal; i++) {
+    container.innerHTML += '<div class="square"></div>';
+  }
 }
