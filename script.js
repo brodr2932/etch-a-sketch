@@ -1,7 +1,7 @@
 const container = document.querySelector(".container");
 const changeGridSizeBtn = document.querySelector('#grid-size-btn');
 
-changeGridSize(16);
+changeGridSize(16); // Initial grid on startup
 
 function changeGridSize(numSquaresPerSide) {
   const numSquaresTotal = numSquaresPerSide * numSquaresPerSide;
@@ -17,8 +17,13 @@ function changeGridSize(numSquaresPerSide) {
   })
 }
 
+function clearGrid() {
+  container.innerHTML = "";
+}
+ 
 changeGridSizeBtn.addEventListener('click', () => {
   let userInput = parseInt(prompt('Enter the number of squares per side (e.g., 20 for a 20×20 grid):'));
+  clearGrid();
   changeGridSize(userInput);
 });
 
