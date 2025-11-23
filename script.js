@@ -8,14 +8,17 @@ function changeGridSize(numSquaresPerSide) {
 
   // Generate square divs based on user input
   for (let i = 0; i < numSquaresTotal; i++) {
-    container.innerHTML += '<div class="square"></div>';
+    const square = document.createElement("div");
+    square.classList.add("square");
+    container.appendChild(square);
   }
 
-  const squares = document.querySelectorAll(".square");
-  squares.forEach(square => {
-    square.addEventListener('mouseover', () => square.style.backgroundColor = "black");
+  container.addEventListener("mouseover", (e) => {
+    if (e.target.classList.contains("square")) {
+      e.target.style.backgroundColor = "black";
+    }
   })
-}
+ }
 
 function clearGrid() {
   container.innerHTML = "";
