@@ -11,6 +11,7 @@ function generateGrid(numSquaresPerSide) {
     const square = document.createElement("div");
     square.classList.add("square");
     container.appendChild(square);
+    square.style.flex = `0 0 calc(100%/${numSquaresPerSide})`;
   }
 
   // Event delegation: the container handles hover events for all squares (better performance)
