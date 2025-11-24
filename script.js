@@ -1,6 +1,6 @@
 const container = document.querySelector(".container");
-const changeGridSzBtn = document.querySelector('#grid-size-btn');
-// const clearGridBtn =
+const changeGridSzBtn = document.querySelector("#grid-size-btn");
+const clearGridBtn = document.querySelector("#clear-grid-btn");
 
 generateGrid(16); // Initial grid on startup
 
@@ -28,11 +28,11 @@ function clearGrid() {
 }
  
 changeGridSzBtn.addEventListener('click', () => {
-  let userInput = parseInt(prompt('Enter the number of squares per side (e.g., 20 for a 20×20 grid):'));
+  let userInput = parseInt(prompt("Enter the number of squares per side (e.g., 20 for a 20×20 grid):"));
 
   while (userInput > 100) {
     alert("Too high! Enter a number less than 100:")
-    userInput = parseInt(prompt('Enter the number of squares per side (e.g., 20 for a 20×20 grid):'));
+    userInput = parseInt(prompt("Enter the number of squares per side (e.g., 20 for a 20×20 grid):"));
   }
 
   clearGrid();
