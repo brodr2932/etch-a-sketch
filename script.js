@@ -29,7 +29,3 @@ changeGridSizeBtn.addEventListener('click', () => {
   clearGrid();
   changeGridSize(userInput);
 });
-
-
-// Right now the web page generates a 16x16 grid by default.
-// TODO: Implement functionality to clear the current grid and generate a new grid based on the user input
