@@ -11,7 +11,7 @@ function generateGrid(numSquaresPerSide) {
     const square = document.createElement("div");
     square.classList.add("square");
     container.appendChild(square);
-    square.style.flex = `0 0 calc(100%/${numSquaresPerSide})`;
+    square.style.flex = `0 0 calc(100%/${numSquaresPerSide})`;fo
   }
 
   // Event delegation: the container handles hover events for all squares (better performance)
@@ -31,5 +31,3 @@ changeGridSizeBtn.addEventListener('click', () => {
   clearGrid();
   generateGrid(userInput);
 });
-
-// TODO: Wrap each row after every n squares. (n being whatever the user inputted e.g.: the user inputs 2, so the row should wrap after every 2 squares)
