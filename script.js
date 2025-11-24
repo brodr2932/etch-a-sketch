@@ -28,6 +28,12 @@ function clearGrid() {
  
 changeGridSizeBtn.addEventListener('click', () => {
   let userInput = parseInt(prompt('Enter the number of squares per side (e.g., 20 for a 20×20 grid):'));
+
+  while (userInput > 100) {
+    alert("Too high! Enter a number less than 100:")
+    userInput = parseInt(prompt('Enter the number of squares per side (e.g., 20 for a 20×20 grid):'));
+  }
+
   clearGrid();
   generateGrid(userInput);
 });
