@@ -37,6 +37,3 @@ changeGridSizeBtn.addEventListener('click', () => {
   clearGrid();
   generateGrid(userInput);
 });
-
-// TODO: Input validation: If user enters > 100, send alert() that the # is too high and prompt them to enter again until they
-// enter a valid number.
