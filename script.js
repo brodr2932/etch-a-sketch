@@ -22,10 +22,6 @@ function generateGrid(numSquaresPerSide) {
     }
   })
  }
-
-// function clearGrid() {
-  
-// }
  
 changeGridSzBtn.addEventListener('click', () => {
   let userInput = parseInt(prompt("Enter the number of squares per side (e.g., 20 for a 20×20 grid):"));
@@ -40,9 +36,9 @@ changeGridSzBtn.addEventListener('click', () => {
 });
 
 clearGridBtn.addEventListener('click', () => {
-  // clearGrid();
+  const squares = document.querySelectorAll(".square");
+
+  squares.forEach((square) => {
+    square.style.backgroundColor = "initial";
+  });
 })
-
-
-// TODO: Add event listener to Clear Grid button to clear the grid, or erase, the filled in squares (if any). The empty grid
-// should still display.
