@@ -43,6 +43,3 @@ h1 {
   flex: 0 0 calc(100%/16);
   aspect-ratio: 1 / 1;
 }
-
-/* TODO: Apply hover effect to grid squares. */
-
