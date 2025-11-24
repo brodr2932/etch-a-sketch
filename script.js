@@ -39,6 +39,6 @@ clearGridBtn.addEventListener('click', () => {
   const squares = document.querySelectorAll(".square");
 
   squares.forEach((square) => {
-    square.style.backgroundColor = "initial";
+    square.style.backgroundColor = "";
   });
 })
