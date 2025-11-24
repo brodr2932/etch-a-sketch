@@ -1,9 +1,9 @@
 const container = document.querySelector(".container");
 const changeGridSizeBtn = document.querySelector('#grid-size-btn');
 
-changeGridSize(16); // Initial grid on startup
+generateGrid(16); // Initial grid on startup
 
-function changeGridSize(numSquaresPerSide) {
+function generateGrid(numSquaresPerSide) {
   const numSquaresTotal = numSquaresPerSide * numSquaresPerSide;
 
   // Generate square divs based on user input
@@ -27,5 +27,7 @@ function clearGrid() {
 changeGridSizeBtn.addEventListener('click', () => {
   let userInput = parseInt(prompt('Enter the number of squares per side (e.g., 20 for a 20×20 grid):'));
   clearGrid();
-  changeGridSize(userInput);
+  generateGrid(userInput);
 });
+
+// TODO: Wrap each row after every n squares. (n being whatever the user inputted e.g.: the user inputs 2, so the row should wrap after every 2 squares)
