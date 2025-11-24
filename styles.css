@@ -19,7 +19,6 @@ button {
 }
 
 .buttons {
-  /* border: 1px solid red; */
   margin-bottom: 30px;
 }
 
@@ -30,7 +29,6 @@ h1 {
 }
 
 .container {
-  /* border: 3px dashed red;  */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
