@@ -22,6 +22,7 @@ function generateGrid(numSquaresPerSide) {
     }
   })
  }
+
  
 changeGridSzBtn.addEventListener('click', () => {
   let userInput = parseInt(prompt("Enter the number of squares per side (e.g., 20 for a 20×20 grid):"));
