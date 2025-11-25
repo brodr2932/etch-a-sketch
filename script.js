@@ -26,7 +26,7 @@ function generateGrid(numSquaresPerSide) {
 
 changeGridSzBtn.addEventListener('click', () => {
   let userInput = parseInt(prompt("Enter the number of squares per side (e.g., 20 for a 20×20 grid):"));
-  
+
   // If user hits 'Cancel' on prompt, exit function
   if (Number.isNaN(userInput)) return;
 
@@ -47,7 +47,3 @@ clearGridBtn.addEventListener('click', () => {
     square.style.backgroundColor = "";
   });
 })
-
-// FIXME: When user hits Cancel on the prompt, userInput becomes NaN and therefore the code proceeds with that value and tries
-// to generate a grid using NaN which results in no squares (a blank page). I basically want it so that when the user hits Cancel, 
-// then exit out of the function of the event listener.
