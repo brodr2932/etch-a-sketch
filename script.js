@@ -42,8 +42,11 @@ changeGridSzBtn.addEventListener('click', () => {
 
 clearGridBtn.addEventListener('click', () => {
   const squares = document.querySelectorAll(".square");
-
   squares.forEach((square) => {
     square.style.backgroundColor = "";
   });
 })
+
+// TODO: Input validation (alert the user "Please enter a valid number" and reprompt): 
+// -for when user enters a non-number like a string. 
+// -for when user enters decimal values like 2.3
