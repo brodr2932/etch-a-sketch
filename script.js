@@ -23,7 +23,7 @@ function generateGrid(numSquaresPerSide) {
   })
  }
 
- 
+
 changeGridSzBtn.addEventListener('click', () => {
   let userInput = parseInt(prompt("Enter the number of squares per side (e.g., 20 for a 20×20 grid):"));
 
@@ -32,7 +32,7 @@ changeGridSzBtn.addEventListener('click', () => {
     userInput = parseInt(prompt("Enter the number of squares per side (e.g., 20 for a 20×20 grid):"));
   }
 
-  container.innerHTML = "";
+  container.innerHTML = ""; // clear previous grid
   generateGrid(userInput);
 });
 
@@ -43,3 +43,5 @@ clearGridBtn.addEventListener('click', () => {
     square.style.backgroundColor = "";
   });
 })
+
+// FIXME: Grid disappears if user selects Cancel on the prompt
