@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Ranchers&display=swap');
+
 *,
 *::before,
 *::after {
@@ -24,8 +26,11 @@ button {
 }
 
 h1 {
-  color: gold;
-  font-size: 45px;
+  color: rgba(255, 217, 0, 0.858);
+  font-size: 60px;
+  font-family: "Great Vibes", cursive;
+  font-weight: 700;
+  font-style: normal;
   margin: 45px 0 5px 0;
   text-align: center;
 }
