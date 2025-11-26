@@ -19,4 +19,4 @@ A simple browser-based drawing app inspired by the classic Etch-a-Sketch toy. Mo
 ## Future Improvements
 - Add decorative knobs for visual design
 - Additional color options or random color mode
-
+- Add responsive design for mobile devices
