@@ -39,7 +39,7 @@ button:active {
 
 h1 {
   color: rgba(255, 217, 0, 0.858);
-  font-size: 60px;
+  font-size: 65px;
   font-family: "Great Vibes", cursive;
   font-weight: 700;
   font-style: normal;
@@ -64,7 +64,6 @@ h1 {
 /* 
 TODO: 
 Basic styling:
-  -Style buttons
   -Add two white knobs on each side of grid
     --in the knobs add text "Created by Brandon Rodriguez" and something like "Courtesy of The Odin Project"
 */
