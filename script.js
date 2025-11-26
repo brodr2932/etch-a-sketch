@@ -25,15 +25,22 @@ function generateGrid(numSquaresPerSide) {
 
 
 changeGridSzBtn.addEventListener('click', () => {
-  let userInput = parseInt(prompt("Enter the number of squares per side (e.g., 20 for a 20×20 grid):"));
+  let userInput;
 
-  // If user hits 'Cancel' on prompt, exit function
-  if (Number.isNaN(userInput)) return;
+  while (true) {
+    const input = prompt("Enter number of squares per side e.g. 20 for 20x20 grid");
 
-  // If user enters a number > 100, continue prompting until valid input
-  while (userInput > 100) {
-    alert("Too high! Enter a number less than 100:")
-    userInput = parseInt(prompt("Enter the number of squares per side (e.g., 20 for a 20×20 grid):"));
+    // If user hits Cancel, exit function
+    if (input === null) return;
+
+    userInput = Number(input);
+
+    // Check valid integer between 1 and 100
+    if (Number.isInteger(userInput) && userInput >= 1 && userInput <= 100) {
+      break; // Input is valid, so exit loop
+    }
+
+    alert("Please enter a whole number between 1 and 100!");
   }
   
   container.innerHTML = ""; // clear previous grid
