@@ -15,7 +15,7 @@ function generateGrid(numSquaresPerSide) {
     square.style.flex = `0 0 calc(100%/${numSquaresPerSide})`;
   }
 
-  // Event delegation: the container handles hover events for all squares (better performance)
+  // Event delegation: the container handles hover events for all squares
   container.addEventListener("mouseover", (e) => {
     if (e.target.classList.contains("square")) {
       e.target.style.backgroundColor = "black";
