@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap');
 
 *,
 *::before,
@@ -17,8 +18,13 @@ body {
 }
 
 button {
-  font-size: 12px;
-  padding: 2px 5px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 3px 8px;
 }
 
 .buttons {
