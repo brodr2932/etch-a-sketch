@@ -21,10 +21,16 @@ button {
   background-color: white;
   border: none;
   border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
   font-family: Arial, sans-serif;
   font-size: 15px;
   font-weight: 500;
   padding: 3px 8px;
+}
+
+button:active {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 .buttons {
