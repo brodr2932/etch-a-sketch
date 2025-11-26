@@ -10,6 +10,9 @@ A simple browser-based drawing app inspired by the classic Etch-a-Sketch toy. Mo
 - Squares automatically resize to fit the container
 - Clear button to reset the drawing area
 
+## Live Demo
+Link: https://brodr2932.github.io/etch-a-sketch/
+
 ## How to Use
 1. Open the webpage in your browser
 2. Move your mouse over the squares to draw
